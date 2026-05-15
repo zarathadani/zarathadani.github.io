@@ -1,0 +1,93 @@
+ body {
+    /* background: #BDCEC8;
+    background: -moz-linear-gradient(left, #BDCEC8 0%, #A3A4A4 50%, #C3C5C0 100%);
+    background: -webkit-linear-gradient(left, #BDCEC8 0%, #A3A4A4 50%, #C3C5C0 100%);
+    background: linear-gradient(to right, #BDCEC8 0%, #A3A4A4 50%, #C3C5C0 100%);
+    */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10vh;
+    color: rgb(73, 57, 6);
+    width: 100%;
+}
+
+image#bgimage { 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  /*background: url(texttight.jpeg) ;*/
+  background-size: cover; 
+}
+
+a   {
+    color:rgb(73, 57, 6);
+    text-decoration: none;
+}
+
+a:hover {
+  color: #1720c9;
+    text-decoration: none;
+}
+
+a:active {
+  color: #1720c9;
+    text-decoration: none;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: #1720c9;
+
+}
+
+::selection {
+  color: #1720c9;
+
+}
+
+.bottomleft-text {
+  width: 75%;
+  height: 4%;
+  position: fixed;
+  left: 3px;
+  bottom: 3px;
+  z-index: 51;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4vh;
+  color: #1720c9;
+}
+
+.bottomright-text {
+  width: 75%;
+  height: 4%;
+  position: fixed;
+  bottom: 3px;
+  right: 3px;
+  z-index: 51;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4vh;
+  color: #1720c9;
+  text-align: right;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #1720c9);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}

@@ -1,1 +1,117 @@
+<!DOCTYPE html, javaScript>
 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial scale=1">
+    <title>zara thadani</title>
+    <meta name="description" content="portfolio">
+    <meta name="author" content="zara thadani">
+    <link rel="stylesheet" href="style.css">
+<meta property="og:title" content="zara thadani's portfolio">
+  <meta property="og:url" content="https://zarathadani.github.io/">
+  <meta property="og:description" content="Portfolio; Zara Thadani">
+
+  <link rel="icon" href="">
+  <link rel="icon" href="" type="image/svg+xml">
+
+  <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+
+ <div class="center-text"><a href="/"></a>Zara Thadani</a></div>
+<div class="container">
+
+  
+  <div class="partitionstories">
+    <div class="numbertext">1/10</div>
+      <img src="before.jpg" style="width:50%">
+  </div>
+
+  <div class="partitionstories">
+    <div class="numbertext">2/10</div>
+      <img src="tight.jpg" style="width:50%">
+  </div>
+
+  <div class="partitionstories">
+    <div class="numbertext">3/10</div>
+      <img src="onwomemen.jpg" style="width:50%">
+  </div>
+
+   <div class="partitionstories">
+    <div class="numbertext">4/10</div>
+      <img src="womenfull.jpg" style="width:50%">
+  </div>
+
+  <div class="partitionstories">
+    <div class="numbertext">5/10</div>
+      <img src="books.jpg" style="width:50%">
+  </div>
+
+  <div class="partitionstories">
+    <div class="numbertext">6/10</div>
+      <img src="drawingtight.jpg" style="width:50%">
+  </div>
+
+  <div class="partitionstories">
+    <div class="numbertext">7/10</div>
+      <img src="threadstight.jpg" style="width:50%">
+  </div>
+
+  <div class="partitionstories">
+    <div class="numbertext">8/10</div>
+      <img src="below.jpg" style="width:50%">
+  </div>
+
+  <div class="partitionstories">
+    <div class="numbertext">9/10</div>
+      <img src="final.jpg" style="width:50%">
+  </div>
+
+    <div class="partitionstories">
+    <div class="numbertext"></div>
+      <img src="after.jpg" style="width:50%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("partitionstories");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+<div class="bottomright-text"><a href="https://drive.google.com/file/d/11u0lteH4JMlUuviH4vOqTyf4ZswHhmCh/view?usp=drivesdk">CV</a>
+  
+
+</body></html></javaScript>
+</head>
